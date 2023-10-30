@@ -1,4 +1,4 @@
-import { Navbar } from "@material-tailwind/react";
+
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -17,7 +17,7 @@ function Aboutus() {
       label: (
         <div>
           <p
-            className={` text-[11px] ml-[-12px] 2xl:ml-[-40px] sm:text-[14px] w-[80px] sm:w-[120px] lg:w-[193px] lg:hover:w-[193px]  h-[32px] lg:h-[50px] grid place-items-center rounded-full ${
+            className={` text-[11px] ml-[-12px]  sm:text-[14px] w-[80px] sm:w-[120px] lg:w-[193px] lg:hover:w-[193px]  h-[32px] lg:h-[50px] grid place-items-center rounded-full ${
               activeTab === "social media"
                 ? "bg-[blue] text-[white]"
                 : "bg-[#F9F9FF] text-[black]"
@@ -155,7 +155,7 @@ function Aboutus() {
       label: (
         <div>
           <p
-            className={`text-[11px] sm:text-[14px] w-[100px] sm:w-[130px] h-[32px] lg:h-[50px] rounded-full grid place-items-center lg:w-[193px]  text-[white]" : "bg-[#F9F9FF] text-[black]"}`}
+            className={`text-[11px] sm:text-[14px] w-[100px] sm:w-[130px] h-[32px] lg:h-[50px] 2xl:ml-[20px] rounded-full grid place-items-center lg:w-[193px]  text-[white]" : "bg-[#F9F9FF] text-[black]"}`}
           >
             Human Resource
           </p>
@@ -168,7 +168,7 @@ function Aboutus() {
       label: (
         <div>
           <p
-            className={`text-[11px] sm:text-[14px] w-[100px] sm:w-[130px] h-[32px] lg:h-[50px] ml-[-35px] rounded-full grid place-items-center lg:w-[193px]  text-[white]" : "bg-[#F9F9FF] text-[black]"}`}
+            className={`text-[11px] sm:text-[14px] w-[100px] sm:w-[130px] h-[32px] lg:h-[50px] ml-[-35px] 2xl:ml-[0px] rounded-full grid place-items-center lg:w-[193px]  text-[white]" : "bg-[#F9F9FF] text-[black]"}`}
           >
             Finance
           </p>
