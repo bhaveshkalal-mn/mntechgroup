@@ -117,7 +117,7 @@ function Navigation() {
               </ListItem>
             </List>
           </AccordionBody>
-        </Accordion>
+        </Accordion >
 
         <Accordion
           open={open === 2}
@@ -476,10 +476,10 @@ const location = useLocation();
 
             </Button>
           <div onMouseEnter={AboutMouseEnter}  onMouseLeave={AboutMouseLeave} style={{display:showMenu ? "" : "none"}} className=" absolute boxshadow animate-none bg-[white] left-0 w-full h-[380px] lg:place-items-center  overflow-visible lg:grid">
-            <div className="lg:w-[960px] xl:w-[1050px] 2xl:w-[1250px] h-[380px] ">
+            <div className="lg:w-[93%] xl:w-[84%] 2xl:w-[1280px] h-[380px] ">
               <div className="flex mt-[51px]">
                 <h1 className="mt-[5px] text-[28px] font-semibold">About Us</h1>
-                <div className="ml-[130px] w-[1px] h-[246px] bg-[#EDEDED]"></div>
+                <div className="ml-[130px] w-[1px] h-[200px] xl:h-[240px] bg-[#EDEDED]"></div>
                 <div className="mt-[10px] ml-[52px] h-[150px] grid grid-cols-2 gap-x-[82px]   ">
                   <a href="/about/aboutus" >
                     <h1 className={`${location.pathname === "/about/aboutus" ? "text-[#0904F2]" : ""} text-[16px] hover:text-[#0904F2] font-semibold h-[24px]`}>
@@ -530,19 +530,21 @@ const location = useLocation();
             >
               Service
             </Button>
-          
+           
+            	
+           
           <div onMouseEnter={ServiceMouseEnter} onMouseLeave={ServiceMouseLeave} style={{display:showServiceMenu ? "" : "none"}} className="absolute left-0 boxshadow  hidden bg-[white] w-full h-[482px] lg:place-items-center  overflow-visible lg:grid">
-            <div className="    lg:w-[960px] xl:w-[1060px] 2xl:w-[1290px] h-[380px] ">
+            <div className=" lg:w-[93%] xl:w-[84%] 2xl:w-[1285px] h-[380px] ">
               <div className="flex mt-[20px]">
                 <div className=" w-[220px]">
-
+               
                   <h1
                     onMouseEnter={EnterDesignSection}
-                    className={`${!design ? ""  : "text-[#0904F2]"} text-[16px] font-semibold h-[24px] hover:text-[#0904F2]`}>
+                    className={`${!design ? ""  : "text-[#0904F2]"} text-[16px] mr-[0px]  w-[220px] font-semibold h-[24px] hover:text-[#0904F2]`}>
                     Design</h1>
 
 
-                  <h1 onMouseEnter={EnterSoftwaredevSection} className={`${!softwaredev ? ""  : "text-[#0904F2]"} w-full text-[16px] font-semibold h-[24px] mt-[43px] hover:text-[#0904F2]`}>
+                  <h1 onMouseEnter={EnterSoftwaredevSection} className={`${!softwaredev ? ""  : "text-[#0904F2]"} w-full   text-[16px] font-semibold h-[24px] mt-[43px] hover:text-[#0904F2]`}>
                     Software Development
                   </h1>
                   
@@ -554,9 +556,9 @@ const location = useLocation();
                   </h1>
                   
                 </div>
-                <div className=" xl:ml-[10px] 2xl:ml-[90px] w-[1px] h-[230px] bg-[#EDEDED]"></div>
+                <div className=" xl:ml-[20px] 2xl:ml-[70px] w-[1px] h-[230px] bg-[#EDEDED]"></div>
                 {/* Design start */}
-                <div className={`${design ? "" : "hidden"} mt-[10px] ml-[22px] xl:ml-[30px]   gap-x-[82px]`}>
+                <div className={`${design ? "" : "hidden"} mt-[10px] ml-[22px]  xl:ml-[30px]   gap-x-[82px]`}>
                   <a href="/service/design/userinterfacedesign">
                     <div>
                       <div className="flex">
@@ -584,15 +586,15 @@ const location = useLocation();
                     </div>
                   </a>
                 </div>
-                <div className={`${design ? "" : "hidden"} xl:ml-[40px] 2xl:ml-[140px] w-[1px] h-[230px] bg-[#EDEDED]`}></div>
-                <div className={`${design ? "" : "hidden"} w-[270px] mt-[70px] ml-[30px] 2xl:ml-[50px]`}>
-                  <h1 className=" text-[27px] 2xl:text-[28px] font-bold text-[#121213] ">
+                <div className={`${design ? "" : "hidden"} lg:ml-[30px]  xl:ml-[60px] 2xl:ml-[140px] w-[1px] h-[230px] bg-[#EDEDED]`}></div>
+                <div className={`${design ? "" : "hidden"} w-[270px] mt-[70px] lg:ml-[30px] xl:ml-[40px] 2xl:ml-[50px]`}>
+                  <h1 className=" lg:text-[24px] xl:text-[26px] 2xl:text-[28px] font-bold text-[#121213] ">
                     We provide exclusive services for your business
                   </h1>
                   <a href="/service/design/consultourexpert">
                     <div className="flex">
 
-                      <p className="mt-[35px] text-[20px] text-[#0904F2] font-bold">Consult Our Expert</p>
+                      <p className="mt-[35px] text-[18px] xl:text-[20px] text-[#0904F2] font-bold">Consult Our Expert</p>
                       <img src="/images/rightarrayblue.svg" className="mt-[33px] ml-[25px]"></img>
 
                     </div>
@@ -602,7 +604,7 @@ const location = useLocation();
 
                 {/* Software Development start */}
 
-                <div className={`${softwaredev ? "" : "hidden"} mt-[10px] ml-[22px] xl:ml-[30px]   gap-x-[82px]`}>
+                <div className={`${softwaredev ? "" : "hidden"} mt-[10px] ml-[22px] xl:ml-[30px]   gap-x-[80px]`}>
                   <a href="/service/softwaredevelopment/customsoftwaredevelopment">
                     <div>
                       <div className="flex">
@@ -648,7 +650,7 @@ const location = useLocation();
 
 
                 {/* IT support start */}
-                <div className={`${itsupport ? "" : "hidden"} mt-[10px] ml-[20px] xl:ml-[52px]   gap-x-[82px]`}>
+                <div className={`${itsupport ? "" : "hidden"} mt-[10px] ml-[20px] xl:ml-[52px]   gap-x-[80px]`}>
                   
                     <div>
                       <div className="flex">
@@ -813,21 +815,43 @@ const location = useLocation();
        
       </Typography>
 
-      <Typography
+   {/* page is under construction start   */}
+
+   <Typography
+        as="li"
+        variant="small"
+        color="blue-gray"
+        className=" mr-[18px] w-full lg:w-auto md:mb-3 border-b  lg:border-none p-[3px] lg:p-[0px] font-medium lg:font-normal"
+      >
+        <Button
+          variant="text"
+          className="flex hover:text-[#0904F2] items-center gap-3 text-[#000] xl:text-[#232222] 2xl:text-[#000] text-[13.8px] xl:text-[14.5px] 2xl:text-[14.5px]  font-normal capitalize tracking-normal "
+        >
+          <NavLink to="comingsoon">
+            
+          Products
+           
+          </NavLink>
+        </Button>
+
+      </Typography>
+
+{/* page is under construction finish   */}
+      {/* <Typography
         as="li"
         variant="small"
         color="blue-gray"
         className="mr-[18px] w-full lg:w-auto md:mb-3 border-b border-t lg:border-none mt-[19px] lg:mt-[-1px] p-[17px] lg:p-[0px]  font-medium lg:font-normal"
-      >
+      > */}
         
         {/* <SpeedDial>
           <SpeedDialHandler> */}
-            <Button
+            {/* <Button
               variant="text"
               className={`flex  items-center gap-3 text-[#000] text-[15.5px] 2xl:text-[15.6px] font-normal  capitalize tracking-normal  ${location.pathname.startsWith("/product") ? "text-[#0904F2]" : "text-[black]"} `}
             >
               Products
-            </Button>
+            </Button> */}
           {/* </SpeedDialHandler> */}
           {/* <SpeedDialContent className="boxshadow  hidden bg-[white] w-full h-[482px] lg:place-items-center  overflow-visible lg:grid">
             <div className="lg:w-[960px] xl:w-[1060px] 2xl:w-[1290px] h-[380px] ">
@@ -908,7 +932,7 @@ const location = useLocation();
             </div>
           </SpeedDialContent>
         </SpeedDial> */}
-      </Typography>
+      {/* </Typography> */}
       <Typography
         as="li"
         variant="small"

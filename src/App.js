@@ -4,7 +4,7 @@ import Navigation from "./components/Navigation";
 
 import Finalfooter from "./components/Finalfooter";
 
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import {  Route, Routes } from "react-router-dom";
 
 
 import { useEffect } from 'react';
@@ -32,6 +32,7 @@ import E_commerce_developmen from "./components/E_commerce_developmen";
 import Social_media_platform_development from "./components/Social_media_platform_development";
 import Ott_development from "./components/Ott_development";
 import "./App.css";
+import Coming_soon from "./components/Coming_soon";
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -53,7 +54,7 @@ function App() {
    
    
 
-    <BrowserRouter>
+    
     
     <Navigation/>
     <ScrollToTop/>
@@ -81,6 +82,7 @@ function App() {
       <Route path="/service/softwaredevelopment/customsoftwaredevelopment" element={<Software_devlopment/>}></Route>
       <Route path="/service/softwaredevelopment/webapplicationdevelopment" element={<Web_app_page/>}></Route>
       <Route path="/service/softwaredevelopment/mobileapplicationdevelopment" element={<Mobile_App_Development/>}></Route>
+      <Route path="/service/softwaredevelopment/androidapplicationdevelopment" element={<Mobile_App_Development/>}></Route>
       <Route path="/service/socialmedia/socialmediaplatformdevelopment" element={<Social_media_platform_development/>}></Route>
       <Route path="/service/socialmedia/ottdevelopment" element={<Ott_development/>}></Route>
       <Route path="/service/webapp/customsoftwaredevelopment" element={<Software_devlopment/>}></Route>
@@ -106,7 +108,8 @@ function App() {
       <Route path="/service/webapp/customsoftwaredevelopment/help" element={<Contact/>}></Route>
       <Route path="/service/softwaredevelopment/customsoftwaredevelopment/help" element={<Contact/>}></Route>
       <Route path="/service/webapp/ecommercedevelopment/help" element={<Contact/>}></Route>
-     
+
+     <Route path="/comingsoon" element={<Coming_soon/>}></Route>
       <Route path="/Join" element={<Joinus/>}></Route>
       <Route path="/Contact" element={<Contact/>}></Route>
       <Route path="/button" element={<Contact/>}></Route>
@@ -114,7 +117,7 @@ function App() {
       
     </Routes>
     
-    </BrowserRouter>
+    
     <Finalfooter/>
 
     

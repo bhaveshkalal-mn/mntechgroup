@@ -7,6 +7,7 @@ import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 
+
 import {
     Accordion,
     AccordionHeader,
@@ -123,7 +124,7 @@ function Ott_development() {
             OTT App Development Services We Offer
           </h1>
 
-          <div className="hidden lg:block sm:h-[500px] md:h-[400px] xl:h-[433px] py-[35px] xl:py-[45px]  lg:px-[10px] 2xl:px-[30px] mt-[30px] lg:mt-[50px] xl:mt-[60px] bg-[#0904F2] rounded-[14px] ">
+          <div className="hidden lg:block sm:h-[500px] md:h-[400px] xl:h-[433px] py-[35px] xl:py-[50px]  lg:px-[10px] 2xl:px-[30px] mt-[30px] lg:mt-[50px] xl:mt-[60px] bg-[#0904F2] rounded-[14px] ">
             <Box sx={{ flexGrow: 1, display: "flex", height: 340 }}>
               <Tabs
               
@@ -136,40 +137,42 @@ function Ott_development() {
               >
                 
                 <Tab
-                  className="text-white w-[400px] "
+                  className="text-white w-[300px] "
                   label="Custom OTT App Development"
                   {...a11yProps(0)}
                 />
                 
 
                 <Tab
-                  className="text-white w-[400px]  grid place-items-start"
+                  className="text-white w-[224px]  "
                   label="Platform Selection"
                   {...a11yProps(1)}
                 />
 
                 <Tab
-                  className="text-white w-[400px] "
+                  className="text-white w-[198px] "
                   label=" API Enhancement"
                   {...a11yProps(2)}
                 />
                 <Tab
-                  className="text-white w-[400px]"
+                  className="text-white w-[343px]"
                   label=" User Authentication and Security"
                   {...a11yProps(3)}
                 />
                 <Tab
-                  className="text-white w-[400px]"
+                  className="text-white w-[230px]"
                   label="Feature Integration"
                   {...a11yProps(4)}
                 />
+                
                 <Tab
-                  className="text-white w-[400px]"
+                  className="text-white w-[308px]"
                   label="Real-time Chat and Messaging"
                   {...a11yProps(5)}
                 />
+               
                 <Tab
-                  className="text-white w-[400px]"
+                  className="text-white w-[266px]"
                   label="Analytics and Reporting"
                   {...a11yProps(6)}
                 />
@@ -345,6 +348,7 @@ function Ott_development() {
                 </div>
               </TabPanel>
             </Box>
+            
           </div>
           <div className=" lg:hidden  lg:h-[400px] xl:h-[433px] xl:py-[45px]  lg:px-[10px] 2xl:px-[30px] mt-[30px] lg:mt-[50px] xl:mt-[60px] ">
             <Accordion open={open === 1} style={{borderBottom:"1px solid  #E0E0E0"}} icon={<Icon id={1} open={open} />}>
@@ -545,7 +549,7 @@ function Ott_development() {
                 <img src="/images/pythone.svg"></img>
               </div>
               <div className="hidden sm:block w-[103px] h-[30px]">
-                <img src="/images/social media platform/ruby&angular.svg"></img>
+                <img src="/images//ruby.svg"></img>
               </div>
               <div className="w-[103px] h-[30px]">
                 <img src="/images/vuejs.svg"></img>
@@ -556,8 +560,11 @@ function Ott_development() {
               <div className="w-[103px] h-[30px]">
                 <img src="/images/javascript.svg"></img>
               </div>
-              <div className="w-[103px] h-[30px]">
+              <div className="w-[103px] h-[30px] mt-[-5px]">
                 <img src="/images/social media platform/mysql.svg"></img>
+              </div>
+              <div className=" hidden sm:block w-[103px] h-[30px] mt-[6px]">
+                <img src="/images/social media platform/angular.svg"></img>
               </div>
               <div className=" sm:hidden w-[103px] h-[30px]">
                 <img src="/images/social media platform/angular.svg"></img>

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import emailjs from "emailjs-com";
 import Button from '@mui/material/Button';
 import Dialog from '@mui/material/Dialog';
 import DialogActions from '@mui/material/DialogActions';
@@ -7,6 +8,7 @@ import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
 
 function CustomModal({ isOpen, onClose }) {
+  
   return (
     isOpen ? <>
 
@@ -35,6 +37,7 @@ function CustomModal({ isOpen, onClose }) {
 }
 
 function Joinus() {
+  
   const [open, setOpen] = React.useState(false);
 
   const handleClickOpen = () => {
@@ -53,6 +56,14 @@ function Joinus() {
   };
  
   const renderTabContent = () => {
+    function sendEmail(e){
+      e.preventDefault();
+      //service_qin20qc","template_lvvch6b
+
+          emailjs.sendForm("service_zqkcodh", "template_akafirl", e.target, "lZ5atB2ijXg4NHxvN").then(res=>{console.log(res);} , setActiveTab(activeTab + 1)).catch(err=> console.log(err));
+
+    }
+    
     switch (activeTab) {
       case 1:
         return <>
@@ -99,6 +110,7 @@ function Joinus() {
       </>
       case 2:
         return <>
+       
           <div className="ml-[10px] sm:ml-[27px] lg:ml-[35px] xl:ml-[40px] 2xl:ml-[27px] mt-[10px] sm:mt-[10px]  xl:mt-[15px]">
           <div className="flex lg:mt-[20px]">
             <h2 id="model-h2" className="text-[16px] sm:text-[20px] lg:text-[18px] xl:text-[20px]">Submit Your CV</h2>
@@ -107,37 +119,43 @@ function Joinus() {
           </button>
             
           </div>
+          <form onSubmit={sendEmail}>
           <div className=" mt-[20px] sm:mt-[45px] lg:mt-[20px] xl:mt-[30px] 2xl:mt-[45px]">
             <p className="text-[14px] font-medium">Full Name</p>
-            <input className="mt-[10px] px-[10px] focus:outline-none border-1 border-[#CDCDCD] w-[290px] sm:w-[360px] md:w-[360px]  lg:w-[420px] xl:w-[450px] h-[45px] sm:h-[50px] lg:h-[45px] xl:h-[50px] rounded-[8px]"></input>
+            <input type="text" required name="name" className="mt-[10px] px-[10px] focus:outline-none border-1 border-[#CDCDCD] w-[290px] sm:w-[360px] md:w-[360px]  lg:w-[420px] xl:w-[450px] h-[45px] sm:h-[50px] lg:h-[45px] xl:h-[50px] rounded-[8px]"></input>
           </div>
           <div className="mt-[20px] sm:mt-[30px] lg:mt-[20px] xl:mt-[30px]">
-            <p className="text-[14px] font-medium">
+            <div  className="text-[14px] font-medium">
               Enter your Email/mobile number
-            </p>
-            <input className="mt-[10px]  px-[10px] focus:outline-none border-1 border-[#CDCDCD] w-[290px] sm:w-[360px] md:w-[360px]  lg:w-[420px] xl:w-[450px] h-[45px] sm:h-[50px] lg:h-[45px] xl:h-[50px] rounded-[8px]"></input>
+            </div>
+            <input  required type="email" name="user_email"className="mt-[10px]  px-[10px] focus:outline-none border-1 border-[#CDCDCD] w-[290px] sm:w-[360px] md:w-[360px]  lg:w-[420px] xl:w-[450px] h-[45px] sm:h-[50px] lg:h-[45px] xl:h-[50px] rounded-[8px]"></input>
           </div>
           <div className="sm-[20px] mt-[30px] lg:mt-[20px] xl:mt-[30px]">
-            <p className="text-[14px] font-medium">Applying For?</p>
-            <select
+            <div  className="text-[14px] font-medium">Applying For?</div>
+            <select type="select" name="select" 
               className="select mt-[10px] relative  px-[10px] focus:outline-none border-1   border-[#CDCDCD] w-[290px] sm:w-[360px] md:w-[360px]  lg:w-[420px] xl:w-[450px] h-[45px] sm:h-[50px] lg:h-[45px] xl:h-[50px] rounded-[8px]"
               variant="static"
               Label="Select"
               
             >
               
-              <option>Select</option>
+              <option required>Select</option>
+              <option>Option 1</option>
+              <option>Option 2</option>
+              <option>Option 3</option>
             </select>
            <img className=" absolute mt-[-25px] sm:mt-[-30px] lg:mt-[-28px] xl:mt-[-30px] 2xl:mt-[-30px] ml-[260px] sm:ml-[325px] lg:ml-[385px] xl:ml-[415px]   " src="/images/downarray1.svg"></img>
           </div>
-          <h1 id="model-h1" className="relative text-start mt-[20px] sm:mt-[30px] lg:mt-[20px] xl:mt-[30px]">
+          <div id="model-h1" className="relative text-start mt-[20px] sm:mt-[30px] lg:mt-[20px] xl:mt-[30px]" required>
             Attach a CV
-          </h1>
-          <button onClick={activeTab>=3 ? handleClose :  ()=> setActiveTab(activeTab + 1)}  className="mt-[20px] sm:mt-[30px] lg:mt-[20px] xl:mt-[30px] w-[290px] sm:w-[360px] md:w-[360px]  lg:w-[435px] xl:w-[450px] h-[50px] sm:h-[55px] lg:h-[50px] xl:h-[55px] rounded-[10px] bg-[#0904F2] text-[16px] font-medium text-[white]">
+          </div>
+          
+          <button    className="mt-[20px] sm:mt-[30px] lg:mt-[20px] xl:mt-[30px] w-[290px] sm:w-[360px] md:w-[360px]  lg:w-[435px] xl:w-[450px] h-[50px] sm:h-[55px] lg:h-[50px] xl:h-[55px] rounded-[10px] bg-[#0904F2] text-[16px] font-medium text-[white]">
             Submit
           </button>
-          
+          </form>
         </div>
+        
         </>;
       case 3:
         return <>
@@ -238,28 +256,31 @@ function Joinus() {
           </div>
           <div className=" mt-[20px] sm:mt-[45px] lg:mt-[20px] xl:mt-[30px] 2xl:mt-[45px]">
             <p className="text-[14px] font-medium">Full Name</p>
-            <input className="mt-[10px] px-[10px] focus:outline-none border-1 border-[#CDCDCD] w-[290px] sm:w-[360px] md:w-[360px]  lg:w-[420px] xl:w-[450px] h-[45px] sm:h-[50px] lg:h-[45px] xl:h-[50px] rounded-[8px]"></input>
+            <input required className="mt-[10px] px-[10px] focus:outline-none border-1 border-[#CDCDCD] w-[290px] sm:w-[360px] md:w-[360px]  lg:w-[420px] xl:w-[450px] h-[45px] sm:h-[50px] lg:h-[45px] xl:h-[50px] rounded-[8px]"></input>
           </div>
           <div className="mt-[20px] sm:mt-[30px] lg:mt-[20px] xl:mt-[30px]">
             <p className="text-[14px] font-medium">
               Enter your Email/mobile number
             </p>
-            <input className="mt-[10px]  px-[10px] focus:outline-none border-1 border-[#CDCDCD] w-[290px] sm:w-[360px] md:w-[360px]  lg:w-[420px] xl:w-[450px] h-[45px] sm:h-[50px] lg:h-[45px] xl:h-[50px] rounded-[8px]"></input>
+            <input required className="mt-[10px]  px-[10px] focus:outline-none border-1 border-[#CDCDCD] w-[290px] sm:w-[360px] md:w-[360px]  lg:w-[420px] xl:w-[450px] h-[45px] sm:h-[50px] lg:h-[45px] xl:h-[50px] rounded-[8px]"></input>
           </div>
           <div className="sm-[20px] mt-[30px] lg:mt-[20px] xl:mt-[30px]">
             <p className="text-[14px] font-medium">Applying For?</p>
-            <select
+            <select 
               className="select mt-[10px] relative  px-[10px] focus:outline-none border-1   border-[#CDCDCD] w-[290px] sm:w-[360px] md:w-[360px]  lg:w-[420px] xl:w-[450px] h-[45px] sm:h-[50px] lg:h-[45px] xl:h-[50px] rounded-[8px]"
               variant="static"
               Label="Select"
               
             >
               
-              <option>Select</option>
+              <option required>Select</option>
+              <option>Option 1</option>
+              <option>Option 2</option>
+              <option>Option 3</option>
             </select>
            <img className=" absolute mt-[-25px] sm:mt-[-30px] lg:mt-[-28px] xl:mt-[-30px] 2xl:mt-[-30px] ml-[260px] sm:ml-[325px] lg:ml-[385px] xl:ml-[415px]   " src="/images/downarray1.svg"></img>
           </div>
-          <h1 id="model-h1" className="relative text-start mt-[20px] sm:mt-[30px] lg:mt-[20px] xl:mt-[30px]">
+          <h1 required id="model-h1" className="relative text-start mt-[20px] sm:mt-[30px] lg:mt-[20px] xl:mt-[30px]">
             Attach a CV
           </h1>
           <button onClick={activeTab2>=3 ? handleCloseModal :  ()=> setActiveTab2(activeTab2 + 1)}  className="mt-[20px] sm:mt-[30px] lg:mt-[20px] xl:mt-[30px] w-[290px] sm:w-[360px] md:w-[360px]  lg:w-[435px] xl:w-[450px] h-[50px] sm:h-[55px] lg:h-[50px] xl:h-[55px] rounded-[10px] bg-[#0904F2] text-[16px] font-medium text-[white]">
