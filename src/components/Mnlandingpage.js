@@ -49,19 +49,19 @@ const Comp1 = () => {
         </div>
 
         <div className="hidden lg:block    lg:w-[370px]  lg:h-[415px] xl:w-[404px]  xl:h-[438px] 2xl:w-[404px]  2xl:h-[454px] lg:ml-[70px] xl:ml-[130px] ">
-          <img src="/images/landingpagemodel.svg"></img>
+          <img loading="lazy" src="/images/landingpagemodel.svg"></img>
         </div>
         <div className="hidden md:block lg:hidden">
           <div className=" md:grid place-items-center  h-full w-full ">
             <div className="  md:w-[300px]  md:h-[450x] lg:w-[370px]  lg:h-[415px] xl:w-[404px]  xl:h-[438px] 2xl:w-[404px]  2xl:h-[454px] lg:ml-[80px] xl:ml-[130px] ">
-              <img src="/images/landingpagemodel.svg"></img>
+              <img loading="lazy" src="/images/landingpagemodel.svg"></img>
             </div>
           </div>
         </div>
         <div className="md:hidden ">
           <div className="w-full h-full grid place-items-center mt-[30px]">
             <div className="md:w-[300px] md:h-[400px] ">
-              <img src="/images/landingpagemodel2.svg"></img>
+              <img loading="lazy" src="/images/landingpagemodel2.svg"></img>
             </div>
           </div>
         </div>
@@ -116,7 +116,7 @@ const Comp2 = () => {
         </div>
 
         <div className="hidden lg:block    lg:w-[370px]  lg:h-[415px] xl:w-[404px]  xl:h-[438px] 2xl:w-[404px]  2xl:h-[454px] lg:ml-[50px] xl:ml-[119px] 2xl:ml-[148px] ">
-          <img
+          <img loading="lazy"
             className="mt-[25px] xl:mt-[45px] 2xl:mt-[28px]"
             src="/images/mnlandingpagehappymillan.svg"
           ></img>
@@ -124,14 +124,14 @@ const Comp2 = () => {
         <div className="hidden md:block lg:hidden">
           <div className=" md:grid place-items-center  h-full w-full ">
             <div className="  md:w-[300px]  md:h-[450x] lg:w-[370px]  lg:h-[415px] xl:w-[404px]  xl:h-[438px] 2xl:w-[404px]  2xl:h-[454px] lg:ml-[80px] xl:ml-[130px] ">
-              <img src="/images/happymillanprofile.svg"></img>
+              <img loading="lazy" src="/images/happymillanprofile.svg"></img>
             </div>
           </div>
         </div>
         <div className="md:hidden ">
           <div className="w-full h-full grid place-items-center mt-[30px]">
             <div className="md:w-[300px] md:h-[400px] ">
-              <img
+              <img loading="lazy"
                 className="h-[180px]"
                 src="/images/responsivehappymillanprofile.svg"
               ></img>

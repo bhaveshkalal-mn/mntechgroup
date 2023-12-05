@@ -1,56 +1,18 @@
-<<<<<<< HEAD
 import React  from "react";
-import { useForm } from 'react-hook-form';
 import emailjs from "emailjs-com";
 import { Input } from "@material-tailwind/react";
 
 
 function Contact() {
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm();
+  function sendEmail(e){
+    e.preventDefault();
 
-  const onSubmit = async (data) => {
-    const { name, email, message, attachment } = data;
-
-    const formData = new FormData();
-    formData.append('name', name);
-    formData.append('email', email);
-    formData.append('message', message);
-    formData.append('attachment', attachment[0]);
-
-    try {
-      await emailjs.sendForm('service_jifj1y1', 'template_2t2v6hd', formData, 'lZ5atB2ijXg4NHxvN');
-      console.log('Email sent successfully!');
-    } catch (error) {
-      console.error('Error sending email:', error);
-    }
-  };
-
-  return (
-    <form onSubmit={handleSubmit(onSubmit)}>
-      <input {...register('name', { required: true })} placeholder="Name" />
-      {errors.name && <span>Name is required</span>}
-
-      <input {...register('email', { required: true })} placeholder="Email" />
-      {errors.email && <span>Email is required</span>}
-
-      <textarea {...register('message', { required: true })} placeholder="Message" />
-      {errors.message && <span>Message is required</span>}
-
-      <input type="file" {...register('attachment', { required: true })} />
-      {errors.attachment && <span>Attachment is required</span>}
-
-      <button type="submit">Submit</button>
-    </form>
-=======
-import React from "react";
-
-
-
-function Contact() {
+    emailjs.sendForm("service_jifj1y1", "template_2t2v6hd", e.target, "lZ5atB2ijXg4NHxvN").then(res=>{console.log(res);}).catch(err=> console.log(err));
+  }
+  function send(){
+    alert("Send Successfully")
+  }
+ 
  
   return (
     <div>
@@ -81,17 +43,16 @@ function Contact() {
                 id="contactsection2-h1"
                 className="w-[333px] sm:w-[auto] md:w-[320px] lg:w-[auto] text-[24px] sm:text-[35px] md:text-[28px] lg:text-[35px] xl:text-[43px] leading-normal xl:leading-[50px]"
               >
-                We have expert teams. Don't hesitate to contact us.
+                Our skilled teams are ready to assist. Feel free to reach out.
               </h1>
             </div>
             <div className="  mt-[15px]">
-              <p1
+              <p
                 id="contactsection2-p1"
-                className=" lg:w-[414px] text-[16px] sm:text-[14px] xl:text-[16px] "
+                className=" lg:w-[400px] text-[16px] sm:text-[14px] xl:text-[16px] "
               >
-                Get all your questions answered by our business development
-                team.
-              </p1>
+                Have your inquiries addressed by our business development experts
+              </p>
             </div>
             <div className="grid md:place-items-center lg:place-items-start mt-[15px]">
               <div className="md:text-center lg:text-start sm:w-[450px] md:w-[320px] lg:w-[370px] xl:w-[431px] h-[1px] mt-[10px] sm:mt-[25px] xl:mt-[30px] bg-[#DBDBDB]"></div>
@@ -118,31 +79,32 @@ function Contact() {
               <h1 className="text-[14px] sm:text-[13px] md:text-[12px] lg:text-[13px] xl:text-[14px] font-semibold">
                 Request a proposal
               </h1>
+              <form  onSubmit={sendEmail}>
               <div className="">
                 
-                 <input className="focus:outline-none p-[13px] px-[15px] mt-[20px] sm:mt-[15px] w-[332px] sm:w-[435px] md:w-[360px]  lg:w-[435px] xl:w-[455px] h-[50px] bg-[#F9F9F9] rounded-[8px] text-[14px] md:text-[13px] lg:text-[14px] xl:text-[15px] font-medium " placeholder="Name"></input> 
+                 <input className="focus:outline-none p-[13px] px-[15px] mt-[20px] sm:mt-[15px] w-[332px] sm:w-[435px] md:w-[360px]  lg:w-[435px] xl:w-[455px] h-[50px] bg-[#F9F9F9] rounded-[8px] text-[14px] md:text-[13px] lg:text-[14px] xl:text-[15px] font-medium " type="text" name="name" placeholder="Name" required ></input> 
                 
               </div>
               <div className="flex">
                 <div className="">
-                  <input className="focus:outline-none p-[13px] px-[15px]  mt-[20px] w-[160px] sm:w-[205px] md:w-[170px] lg:w-[205px] xl:w-[214px] h-[50px] bg-[#F9F9F9] rounded-[8px] mr-[12px] sm:mr-[23px] md:mr-[20px] lg:mr-[23px] text-[14px] md:text-[13px] lg:text-[14px] xl:text-[15px] font-medium" type="email"  placeholder="Email address">
+                  <input className="focus:outline-none p-[13px] px-[15px]  mt-[20px] w-[160px] sm:w-[205px] md:w-[170px] lg:w-[205px] xl:w-[214px] h-[50px] bg-[#F9F9F9] rounded-[8px] mr-[12px] sm:mr-[23px] md:mr-[20px] lg:mr-[23px] text-[14px] md:text-[13px] lg:text-[14px] xl:text-[15px] font-medium " type="email" name="user_email"  placeholder="Email address" required>
                     
                   </input>
                 </div>
                 <div id="contact_number" className="">
-                  <input className="focus:outline-none p-[13px] px-[15px]  mt-[20px] w-[160px] sm:w-[205px] md:w-[170px] lg:w-[205px] xl:w-[218px] h-[50px] bg-[#F9F9F9] rounded-[8px] text-[14px] md:text-[13px] lg:text-[14px] xl:text-[15px] font-medium" type="tel"  placeholder="Contact No" >
+                  <input className="focus:outline-none p-[13px] px-[15px]  mt-[20px] w-[160px] sm:w-[205px] md:w-[170px] lg:w-[205px] xl:w-[218px] h-[50px] bg-[#F9F9F9] rounded-[8px] text-[14px] md:text-[13px] lg:text-[14px] xl:text-[15px] font-medium" type="tel" name="Contact no"  placeholder="Contact No" required >
                     
                   </input>
                 </div>
                 
               </div>
               <div className="">
-                <input className="focus:outline-none p-[13px] px-[15px] mt-[20px]  w-[332px] sm:w-[435px] md:w-[360px]  lg:w-[435px]  xl:w-[455px] h-[50px] bg-[#F9F9F9] rounded-[8px] text-[14px] md:text-[13px] lg:text-[14px] xl:text-[15px] font-medium" placeholder=" Enter your budget">
+                <input className="focus:outline-none p-[13px] px-[15px] mt-[20px]  w-[332px] sm:w-[435px] md:w-[360px]  lg:w-[435px]  xl:w-[455px] h-[50px] bg-[#F9F9F9] rounded-[8px] text-[14px] md:text-[13px] lg:text-[14px] xl:text-[15px] font-medium" name="Budget" placeholder=" Enter your budget" required>
                  
                 </input>
               </div>
               <div className="">
-                <textarea className="focus:outline-none p-[13px] px-[15px]  mt-[20px]  w-[332px] sm:w-[435px] md:w-[360px]  lg:w-[435px]  xl:w-[455px] h-[110px] bg-[#F9F9F9] rounded-[8px] text-[14px] md:text-[13px] lg:text-[14px] xl:text-[15px] font-medium" type="text" placeholder="Project description">
+                <textarea className="focus:outline-none p-[13px] px-[15px]  mt-[20px]  w-[332px] sm:w-[435px] md:w-[360px]  lg:w-[435px]  xl:w-[455px] h-[110px] bg-[#F9F9F9] rounded-[8px] text-[14px] md:text-[13px] lg:text-[14px] xl:text-[15px] font-medium" type="text" name="Description" placeholder="Project description" >
                   
                 </textarea>
               </div>
@@ -152,7 +114,9 @@ function Contact() {
                 </p>
               </div>
               <div className="flex">
-                <div className="flex p-[13px] px-[15px] sm:px-[20px] mt-[16px] w-[184px] sm:w-[221px] md:w-[180px] lg:w-[221px] xl:w-[231px] h-[50px] bg-[#F9F9F9] border-2 border-[blue] rounded-[8px] mr-[23px]">
+                
+                <button className="flex p-[13px] px-[15px] sm:px-[20px] mt-[16px] w-[184px] sm:w-[221px] md:w-[180px] lg:w-[221px] xl:w-[231px] h-[50px] bg-[#F9F9F9] border-2 border-[blue] rounded-[8px] mr-[20px] sm:mr-[40px]">
+                
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="11"
@@ -166,16 +130,24 @@ function Contact() {
                     />
                   </svg>
 
-                  <p className="text-[13px] sm:text-[15px] md:text-[13px] lg:text-[15px] font-sans sm:font-medium ml-[10px] sm:ml-[28px] md:ml-[10px] lg:ml-[30px] xl:ml-[36px] 2xl:ml-[36px]">
-                    Attach Document
+                  <p  className="text-[13px] sm:text-[15px] md:text-[13px] lg:text-[15px] font-sans sm:font-medium ml-[10px] sm:ml-[28px] md:ml-[10px] lg:ml-[30px] xl:ml-[36px] 2xl:ml-[36px]">
+                   Attach Document
                   </p>
-                </div>
-                <div className="p-[10px] px-[0px] mt-[16px] w-[187px] md:w-[155px] lg:w-[187px] xl:w-[187px] h-[50px] bg-[#0904F2] rounded-[10px]">
-                  <p className="text-[15px] font-medium text-center py-[4px] text-[white]">
+               
+
+                </button>
+                
+                
+                <button onClick={send}  className="p-[10px] px-[0px] mt-[16px] w-[187px] md:w-[155px] lg:w-[187px] xl:w-[187px] h-[50px] bg-[#0904F2] rounded-[10px]">
+                 
+                  <div className="text-[15px] font-medium text-center py-[4px] text-[white]">
                     Send
-                  </p>
-                </div>
+                  </div>
+                 
+                </button>
+                
               </div>
+              </form>
             </div>
           </div>
         </div>
@@ -223,7 +195,6 @@ function Contact() {
         </div>
       </div>
     </div>
->>>>>>> 758f2be69888acb3bb3391ed70608c45ba2a26c2
   );
 }
 

@@ -67,11 +67,7 @@ function Whychooseuspage() {
                 with your business strategy, ensuring that every tech decision
                 contributes to your success.
               </h2>
-<<<<<<< HEAD
               <div className="bg-[#0904F2] hidden sm:block sm:w-[1px] lg:w-[1.5px]  sm:h-[250px] md:h-[329px] lg:h-[354px] sm:ml-[265px] md:ml-[235px] lg:ml-[290px] xl:ml-[315px] 2xl:ml-[333px] sm:mt-[-247px] md:mt-[-279.5px] lg:mt-[-293.5px] xl:mt-[-308px] 2xl:mt-[-309px]"></div>
-=======
-              <div className="bg-[#0904F2] hidden sm:block sm:w-[1px] lg:w-[1.5px]  sm:h-[250px] md:h-[329px] lg:h-[355px] sm:ml-[265px] md:ml-[235px] lg:ml-[290px] xl:ml-[315px] 2xl:ml-[333px] sm:mt-[-247px] md:mt-[-278px] lg:mt-[-294px] xl:mt-[-308px] 2xl:mt-[-309px]"></div>
->>>>>>> 758f2be69888acb3bb3391ed70608c45ba2a26c2
             </div>
             <div className="bg-[#0904F2]  sm:hidden w-[333px] h-[1px]"></div>
 
@@ -93,11 +89,7 @@ function Whychooseuspage() {
                 enhance efficiency, user experiences, and overall business
                 performance.
               </h2>
-<<<<<<< HEAD
               <div className="hidden md:block bg-[#0904F2] w-[1px]  lg:w-[1.5px] h-[330px] md:h-[329px] lg:h-[354px] xl:h-[354px] 2xl:h-[353px] ml-[224px] lg:ml-[293px] xl:ml-[320px] 2xl:ml-[333px] mt-[-281px] md:mt-[-281.5px] lg:mt-[-291.5px] xl:mt-[-306px] 2xl:mt-[-307px]"></div>
-=======
-              <div className="hidden md:block bg-[#0904F2] w-[1px]  lg:w-[1.5px] h-[330px] md:h-[329px] lg:h-[355px] ml-[224px] lg:ml-[293px] xl:ml-[320px] 2xl:ml-[333px] mt-[-281px] lg:mt-[-292px] xl:mt-[-306px] 2xl:mt-[-308px]"></div>
->>>>>>> 758f2be69888acb3bb3391ed70608c45ba2a26c2
             </div>
             <div className="bg-[#0904F2]  sm:hidden w-[333px] h-[1px]"></div>
 
@@ -246,11 +238,7 @@ function Whychooseuspage() {
                   align with your startup's vision.
                 </h1>
               </div>
-<<<<<<< HEAD
               <div className="mt-[25px] ml-[14px] sm:mt-[40px] md:mt-[45px] lg:mt-[54px]">
-=======
-              <div className="mt-[25px] sm:mt-[40px] md:mt-[45px] lg:mt-[54px]">
->>>>>>> 758f2be69888acb3bb3391ed70608c45ba2a26c2
                 <img src="/images/whychooseus/Results-Oriented.svg"></img>
                 <h1 id="whychooseussection6-h3" className="mt-[20px]">
                   Results-Oriented
