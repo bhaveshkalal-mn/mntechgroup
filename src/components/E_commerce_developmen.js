@@ -1,8 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 758f2be69888acb3bb3391ed70608c45ba2a26c2
 function E_commerce_developmen() {
   return (
     <div>

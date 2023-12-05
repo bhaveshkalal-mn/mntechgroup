@@ -32,11 +32,7 @@ function Aboutus() {
       desc: (
         <div className="w-[323px] h-[181px] lg:w-[249px] lg:h-[234px] rounded-[14px] border-[1px] border-[#0904F2] bg-[#FCFCFF]  mt-[20px] p-[30px] ml-[-20px] sm:ml-[-22px] md:ml-[-10px] lg:ml-[-23px] mb-[60px] lg:mb-[0px]">
           <img src="/images/happy millan.svg"></img>
-<<<<<<< HEAD
-          <div className="w-[260px] sm:w-[265px] md:w-[303px] lg:w-[198px] h-[1px] bg-[#E3E3E3] mt-[10px] lg:mt-[30px]"></div>
-=======
           <div className="w-[260px] sm:w-[303px] lg:w-[198px] h-[1px] bg-[#E3E3E3] mt-[10px] lg:mt-[30px]"></div>
->>>>>>> 758f2be69888acb3bb3391ed70608c45ba2a26c2
           <p id="section5happymillan-p1" className="mt-[13px] text-start">
             Happy Milan
           </p>
@@ -306,19 +302,11 @@ function Aboutus() {
           </div>
 
           {/* section4 start */}
-<<<<<<< HEAD
-          <div className=" mt-[90px] w-[333px] sm:w-[580px] md:w-[750px] lg:w-[960px] xl:w-[1050px]  2xl:w-[1150px] lg:flex mb-[80px] md:mb-[20px] lg:mb-[0px]">
-            <div className="w-[333px] sm:w-[580px] md:w-[750px] lg:w-[400px] xl:w-[590px] 2xl:w-[500px]">
-              <h1
-                id="aboutussection4-h1"
-                className="sm:mt-[20px] grid place-items-center lg:place-items-start"
-=======
           <div className=" mt-[90px] w-[333px] sm:w-[580px] md:w-[750px] lg:w-[960px] xl:w-[1050px]  2xl:w-[1150px] lg:flex  ">
             <div className="w-[333px] sm:w-[580px] md:w-[750px] lg:w-[400px] xl:w-[590px] 2xl:w-[500px]">
               <h1
                 id="aboutussection4-h1"
                 className="mt-[20px] grid place-items-center lg:place-items-start"
->>>>>>> 758f2be69888acb3bb3391ed70608c45ba2a26c2
               >
                 How can we help you?
               </h1>
@@ -356,11 +344,7 @@ function Aboutus() {
                   <div className="lg:w-[150px] lg:h-[100px] lg:ml-[15px] grid place-items-center">
                     <img
                       src="/images/Vector2.svg"
-<<<<<<< HEAD
-                      className="mb-[15px] md:mt-[45px] lg:mt-[0px] "
-=======
                       className="mb-[15px] mt-[45px] lg:mt-[0px] "
->>>>>>> 758f2be69888acb3bb3391ed70608c45ba2a26c2
                     ></img>
                     <h1 id="it-size">Software Development</h1>
                   </div>
@@ -385,17 +369,10 @@ function Aboutus() {
               </div>
             </div>
           </div>
-<<<<<<< HEAD
-          {/* <div className="lg:w-[960px] xl:w-[1050px]  2xl:w-[1150px] lg:h-[1px] bg-[#DDDCFF] lg:mt-[90px] lg:mb-[0px]"></div> */}
-
-          {/* section5 start */}
-          {/* <div className="  mt-[90px] w-[333px] sm:w-[580px] md:w-[750px]  lg:w-[960px] xl:w-[1050px]  2xl:w-[1150px] ">
-=======
           <div className="lg:w-[960px] xl:w-[1050px]  2xl:w-[1150px] lg:h-[1px] bg-[#DDDCFF] lg:mt-[90px] lg:mb-[0px]"></div>
 
           {/* section5 start */}
           <div className="  mt-[90px] w-[333px] sm:w-[580px] md:w-[750px]  lg:w-[960px] xl:w-[1050px]  2xl:w-[1150px] ">
->>>>>>> 758f2be69888acb3bb3391ed70608c45ba2a26c2
             <div>
               <h1
                 id="aboutussection5-h1"
@@ -414,11 +391,7 @@ function Aboutus() {
             <div className=" lg:mt-[50px] mt-[30px] relative ">
               <Tabs value="social media">
                 <TabsHeader
-<<<<<<< HEAD
-                  className="bg-[#f9f9ff] h-[32px] lg:h-[50px] rounded-full "
-=======
                   className="bg-[#f9f9ff] h-[32px] lg:h-[55px] rounded-full "
->>>>>>> 758f2be69888acb3bb3391ed70608c45ba2a26c2
                   indicatorProps={{
                     className: "bg-transform shadow-none !text-gray-900",
                   }}
@@ -442,19 +415,11 @@ function Aboutus() {
                 </TabsBody>
               </Tabs>
             </div>
-<<<<<<< HEAD
-          </div> */}
-=======
           </div>
->>>>>>> 758f2be69888acb3bb3391ed70608c45ba2a26c2
         </div>
       </div>
     </>
   );
 }
 
-<<<<<<< HEAD
 export default Aboutus;
-=======
-export default Aboutus;
->>>>>>> 758f2be69888acb3bb3391ed70608c45ba2a26c2

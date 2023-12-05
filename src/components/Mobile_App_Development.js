@@ -210,6 +210,7 @@ function Mobile_App_Development() {
             The ideal tool varies based on your design workflow, project needs, and individual choices
             </p>
             <div  className=" place-items-center md:place-items-start grid  grid-cols-3 sm:grid-cols-4 gap-y-[30px] sm:gap-y-[60px] md:gap-y-[40px]  lg:gap-y-[50px] xl:gap-y-[60px] gap-x-[20px] lg:gap-x-[40px] xl:gap-x-[60px] 2xl:gap-x-[80px] w-[333px] sm:w-[550px] md:w-[420px] lg:w-[550px] xl:w-[620px] mt-[40px] lg:mt-[55px]">
+<<<<<<< HEAD
             <div  className="w-[103px] h-[30px]  ">
                     <img src="/images/mobileappdevelopment/swift.svg"></img>
                 </div>
@@ -227,13 +228,35 @@ function Mobile_App_Development() {
                 </div>
                 <div  className="w-[103px] h-[30px] ml-[35px] sm:ml-[0px]">
                     <img src="/images/mobileappdevelopment/dart.svg"></img>
+=======
+                <div className="w-[103px] h-[30px]">
+                    <img src="/images/java.svg"></img>
+                </div>
+                <div  className="w-[103px] h-[30px] ml-[20px] sm:ml-[0px]">
+                    <img src="/images/php.svg"></img>
+                </div>
+                <div  className="w-[103px] h-[30px] ml-[50px] sm:ml-[0px]">
+                    <img src="/images/node.svg"></img>
+>>>>>>> 758f2be69888acb3bb3391ed70608c45ba2a26c2
                 </div>
                 <div className="w-[103px] h-[30px]">
                     <img  src="/images/pythone.svg"></img>
                 </div>
+<<<<<<< HEAD
                 
                 
                
+=======
+                <div className="w-[103px] h-[30px]">
+                    <img src="/images/vuejs.svg"></img>
+                </div>
+                <div className="w-[103px] h-[30px]">
+                    <img src="/images/react.svg"></img>
+                </div>
+                <div className="w-[103px] h-[30px]">
+                    <img src="/images/javascript.svg"></img>
+                </div>
+>>>>>>> 758f2be69888acb3bb3391ed70608c45ba2a26c2
                
             </div>
           </div>

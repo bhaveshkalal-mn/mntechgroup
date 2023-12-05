@@ -1,4 +1,4 @@
-
+import { Navbar } from "@material-tailwind/react";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -11,13 +11,14 @@ import {
 } from "@material-tailwind/react";
 
 function Aboutus() {
-  const [activeTab, setactiveTab] = useState("social media");
+  const [activeTab, setactiveTab] = useState();
+  const [currentTab, setCurrentTab] = React.useState("dashboard")
   const data = [
     {
       label: (
         <div>
           <p
-            className={` text-[11px] ml-[-12px]  sm:text-[14px] w-[80px] sm:w-[120px] lg:w-[193px] lg:hover:w-[193px]  h-[32px] lg:h-[50px] grid place-items-center rounded-full ${
+            className={` text-[11px] ml-[-12px] 2xl:ml-[-40px] lg:text-[14px] w-[80px] sm:w-[120px] lg:w-[168px] xl:w-[193px] lg:hover:w-[193px]  h-[32px] lg:h-[50px] grid place-items-center rounded-full ${
               activeTab === "social media"
                 ? "bg-[blue] text-[white]"
                 : "bg-[#F9F9FF] text-[black]"
@@ -32,11 +33,7 @@ function Aboutus() {
       desc: (
         <div className="w-[323px] h-[181px] lg:w-[249px] lg:h-[234px] rounded-[14px] border-[1px] border-[#0904F2] bg-[#FCFCFF]  mt-[20px] p-[30px] ml-[-20px] sm:ml-[-22px] md:ml-[-10px] lg:ml-[-23px] mb-[60px] lg:mb-[0px]">
           <img src="/images/happy millan.svg"></img>
-<<<<<<< HEAD
-          <div className="w-[260px] sm:w-[265px] md:w-[303px] lg:w-[198px] h-[1px] bg-[#E3E3E3] mt-[10px] lg:mt-[30px]"></div>
-=======
           <div className="w-[260px] sm:w-[303px] lg:w-[198px] h-[1px] bg-[#E3E3E3] mt-[10px] lg:mt-[30px]"></div>
->>>>>>> 758f2be69888acb3bb3391ed70608c45ba2a26c2
           <p id="section5happymillan-p1" className="mt-[13px] text-start">
             Happy Milan
           </p>
@@ -68,7 +65,7 @@ function Aboutus() {
       label: (
         <div>
           <p
-            className={`text-[11px] ml-[-5px] 2xl:ml-[-20px] sm:text-[14px] w-[100px] sm:w-[130px] h-[32px] lg:h-[50px] rounded-full grid place-items-center lg:w-[193px]    ${
+            className={`text-[11px] ml-[-5px] 2xl:ml-[-20px] sm:text-[14px] w-[100px] sm:w-[130px] h-[32px] lg:h-[50px] rounded-full grid place-items-center lg:w-[168px] xl:w-[193px]    ${
               activeTab === "sales & marketing"
                 ? "bg-[blue] text-[white]"
                 : "bg-[#F9F9FF] text-[black]"
@@ -146,7 +143,7 @@ function Aboutus() {
       label: (
         <div>
           <p
-            className={`text-[11px] sm:text-[14px] w-[100px] sm:w-[130px] h-[32px] lg:h-[50px] rounded-full grid place-items-center lg:w-[193px]  text-[white]" : "bg-[#F9F9FF] text-[black] "}`}
+            className={`text-[11px] sm:text-[14px] w-[100px] sm:w-[130px] h-[32px] lg:h-[50px] rounded-full grid place-items-center lg:w-[168px] xl:w-[193px]  text-[white]" : "bg-[#F9F9FF] text-[black] "}`}
           >
             Video Streaming
           </p>
@@ -159,7 +156,7 @@ function Aboutus() {
       label: (
         <div>
           <p
-            className={`text-[11px] sm:text-[14px] w-[100px] sm:w-[130px] h-[32px] lg:h-[50px] 2xl:ml-[20px] rounded-full grid place-items-center lg:w-[193px]  text-[white]" : "bg-[#F9F9FF] text-[black]"}`}
+            className={`text-[11px] sm:text-[14px] w-[100px] sm:w-[130px] h-[32px] lg:h-[50px] rounded-full grid place-items-center lg:w-[168px] xl:w-[193px]  text-[white]" : "bg-[#F9F9FF] text-[black]"}`}
           >
             Human Resource
           </p>
@@ -172,7 +169,7 @@ function Aboutus() {
       label: (
         <div>
           <p
-            className={`text-[11px] sm:text-[14px] w-[100px] sm:w-[130px] h-[32px] lg:h-[50px] ml-[-35px] 2xl:ml-[0px] rounded-full grid place-items-center lg:w-[193px]  text-[white]" : "bg-[#F9F9FF] text-[black]"}`}
+            className={`text-[11px] sm:text-[14px] w-[100px] sm:w-[130px] h-[32px] lg:h-[50px] ml-[-35px] rounded-full grid place-items-center lg:w-[168px] xl:w-[193px]  text-[white]" : "bg-[#F9F9FF] text-[black]"}`}
           >
             Finance
           </p>
@@ -306,19 +303,11 @@ function Aboutus() {
           </div>
 
           {/* section4 start */}
-<<<<<<< HEAD
-          <div className=" mt-[90px] w-[333px] sm:w-[580px] md:w-[750px] lg:w-[960px] xl:w-[1050px]  2xl:w-[1150px] lg:flex mb-[80px] md:mb-[20px] lg:mb-[0px]">
-            <div className="w-[333px] sm:w-[580px] md:w-[750px] lg:w-[400px] xl:w-[590px] 2xl:w-[500px]">
-              <h1
-                id="aboutussection4-h1"
-                className="sm:mt-[20px] grid place-items-center lg:place-items-start"
-=======
           <div className=" mt-[90px] w-[333px] sm:w-[580px] md:w-[750px] lg:w-[960px] xl:w-[1050px]  2xl:w-[1150px] lg:flex  ">
-            <div className="w-[333px] sm:w-[580px] md:w-[750px] lg:w-[400px] xl:w-[590px] 2xl:w-[500px]">
+            <div className="w-[333px] sm:w-[580px] md:w-[750px] lg:w-[400px] xl:w-[730px] 2xl:w-[500px]">
               <h1
                 id="aboutussection4-h1"
                 className="mt-[20px] grid place-items-center lg:place-items-start"
->>>>>>> 758f2be69888acb3bb3391ed70608c45ba2a26c2
               >
                 How can we help you?
               </h1>
@@ -356,11 +345,7 @@ function Aboutus() {
                   <div className="lg:w-[150px] lg:h-[100px] lg:ml-[15px] grid place-items-center">
                     <img
                       src="/images/Vector2.svg"
-<<<<<<< HEAD
-                      className="mb-[15px] md:mt-[45px] lg:mt-[0px] "
-=======
                       className="mb-[15px] mt-[45px] lg:mt-[0px] "
->>>>>>> 758f2be69888acb3bb3391ed70608c45ba2a26c2
                     ></img>
                     <h1 id="it-size">Software Development</h1>
                   </div>
@@ -385,17 +370,10 @@ function Aboutus() {
               </div>
             </div>
           </div>
-<<<<<<< HEAD
-          {/* <div className="lg:w-[960px] xl:w-[1050px]  2xl:w-[1150px] lg:h-[1px] bg-[#DDDCFF] lg:mt-[90px] lg:mb-[0px]"></div> */}
-
-          {/* section5 start */}
-          {/* <div className="  mt-[90px] w-[333px] sm:w-[580px] md:w-[750px]  lg:w-[960px] xl:w-[1050px]  2xl:w-[1150px] ">
-=======
           <div className="lg:w-[960px] xl:w-[1050px]  2xl:w-[1150px] lg:h-[1px] bg-[#DDDCFF] lg:mt-[90px] lg:mb-[0px]"></div>
 
           {/* section5 start */}
           <div className="  mt-[90px] w-[333px] sm:w-[580px] md:w-[750px]  lg:w-[960px] xl:w-[1050px]  2xl:w-[1150px] ">
->>>>>>> 758f2be69888acb3bb3391ed70608c45ba2a26c2
             <div>
               <h1
                 id="aboutussection5-h1"
@@ -411,50 +389,34 @@ function Aboutus() {
                 tasks.
               </p>
             </div>
-            <div className=" lg:mt-[50px] mt-[30px] relative ">
-              <Tabs value="social media">
-                <TabsHeader
-<<<<<<< HEAD
-                  className="bg-[#f9f9ff] h-[32px] lg:h-[50px] rounded-full "
-=======
-                  className="bg-[#f9f9ff] h-[32px] lg:h-[55px] rounded-full "
->>>>>>> 758f2be69888acb3bb3391ed70608c45ba2a26c2
-                  indicatorProps={{
-                    className: "bg-transform shadow-none !text-gray-900",
-                  }}
-                >
-                  {data.map(({ label, value }) => (
-                    <Tab
-                      key={value}
-                      value={value}
-                      onClick={() => setactiveTab(value)}
-                    >
-                      {label}
-                    </Tab>
-                  ))}
+            <div className="lg:mt-[50px] mt-[30px]">
+            <Tabs value="social media">
+              <TabsHeader className='bg-[#F5FAFF] lg:w-[960px] xl:w-full rounded-full h-[50px]'
+                                        indicatorProps={{
+                                            className: "bg-[#0904F2] mt-[-3px] h-[50px] shadow-none rounded-full",
+                                        }}>
+                 {data.map(({ label, value }) => (
+                                            <Tab onClick={() => setCurrentTab(value)} className='bg-[#F5FAFF]' key={value} value={value}>
+                                                <div  className={`${currentTab === value ? "text-[white]" : "text-[black]"} text-[12px] xl:text-[14px]  flex items-center xl:gap-2`}>
+                                                    {label}
+                                                </div>
+                                            </Tab>
+                                        ))}
                 </TabsHeader>
                 <TabsBody>
-                  {data.map(({ value, desc }) => (
-                    <TabPanel key={value} value={value}>
-                      {desc}
-                    </TabPanel>
+                {data.map(({ value, desc }) => (
+                                        <TabPanel className=' w-[990px]' key={value} value={value}>
+                                            {desc}
+                                        </TabPanel>
                   ))}
                 </TabsBody>
               </Tabs>
-            </div>
-<<<<<<< HEAD
-          </div> */}
-=======
+              </div>
           </div>
->>>>>>> 758f2be69888acb3bb3391ed70608c45ba2a26c2
         </div>
       </div>
     </>
   );
 }
 
-<<<<<<< HEAD
 export default Aboutus;
-=======
-export default Aboutus;
->>>>>>> 758f2be69888acb3bb3391ed70608c45ba2a26c2

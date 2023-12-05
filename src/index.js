@@ -4,7 +4,10 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { ThemeProvider } from "@material-tailwind/react";
+<<<<<<< HEAD
 import { BrowserRouter } from 'react-router-dom';
+=======
+>>>>>>> 758f2be69888acb3bb3391ed70608c45ba2a26c2
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -14,9 +17,15 @@ root.render(
 
   <React.StrictMode>
     <ThemeProvider>
+<<<<<<< HEAD
    <BrowserRouter>
             <App/>
      </BrowserRouter>
+=======
+   
+            <App/>
+       
+>>>>>>> 758f2be69888acb3bb3391ed70608c45ba2a26c2
     </ThemeProvider>
   </React.StrictMode>
 );

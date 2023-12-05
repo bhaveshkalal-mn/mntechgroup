@@ -1,10 +1,18 @@
 
+<<<<<<< HEAD
 
+=======
+import Navbar from "./components/Navbar";
+>>>>>>> 758f2be69888acb3bb3391ed70608c45ba2a26c2
 import Navigation from "./components/Navigation";
 
 import Finalfooter from "./components/Finalfooter";
 
+<<<<<<< HEAD
 import {  Route, Routes } from "react-router-dom";
+=======
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+>>>>>>> 758f2be69888acb3bb3391ed70608c45ba2a26c2
 
 
 import { useEffect } from 'react';
@@ -19,7 +27,11 @@ import Experiencedesign from "./components/Experiencedesign";
 import Interfacedesign from "./components/Interfacedesign";
 import Joinus from "./components/Joinus";
 import Contact from "./components/Contact";
+<<<<<<< HEAD
 
+=======
+import "./App.css";
+>>>>>>> 758f2be69888acb3bb3391ed70608c45ba2a26c2
 import Whychooseuspage from "./components/Whychooseuspage";
 
 import Workprocess from "./components/Workprocess";
@@ -31,8 +43,12 @@ import Mobile_App_Development from "./components/Mobile_App_Development";
 import E_commerce_developmen from "./components/E_commerce_developmen";
 import Social_media_platform_development from "./components/Social_media_platform_development";
 import Ott_development from "./components/Ott_development";
+<<<<<<< HEAD
 import "./App.css";
 import Coming_soon from "./components/Coming_soon";
+=======
+import Vansh from "./components/Vansh";
+>>>>>>> 758f2be69888acb3bb3391ed70608c45ba2a26c2
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -54,11 +70,20 @@ function App() {
    
    
 
+<<<<<<< HEAD
     
     
     <Navigation/>
     <ScrollToTop/>
       
+=======
+    <BrowserRouter>
+    
+    <Navigation/>
+    <ScrollToTop/>
+      {/* <Ott_development/> */}
+      {/* <Vansh/> */}
+>>>>>>> 758f2be69888acb3bb3391ed70608c45ba2a26c2
     <Routes>
       <Route path="/" element={<Mnlandingpage/>}></Route>
       <Route path="/mnlandingpage/viewourservice" element={<Software_devlopment/>}></Route>
@@ -82,7 +107,10 @@ function App() {
       <Route path="/service/softwaredevelopment/customsoftwaredevelopment" element={<Software_devlopment/>}></Route>
       <Route path="/service/softwaredevelopment/webapplicationdevelopment" element={<Web_app_page/>}></Route>
       <Route path="/service/softwaredevelopment/mobileapplicationdevelopment" element={<Mobile_App_Development/>}></Route>
+<<<<<<< HEAD
       <Route path="/service/softwaredevelopment/androidapplicationdevelopment" element={<Mobile_App_Development/>}></Route>
+=======
+>>>>>>> 758f2be69888acb3bb3391ed70608c45ba2a26c2
       <Route path="/service/socialmedia/socialmediaplatformdevelopment" element={<Social_media_platform_development/>}></Route>
       <Route path="/service/socialmedia/ottdevelopment" element={<Ott_development/>}></Route>
       <Route path="/service/webapp/customsoftwaredevelopment" element={<Software_devlopment/>}></Route>
@@ -108,8 +136,12 @@ function App() {
       <Route path="/service/webapp/customsoftwaredevelopment/help" element={<Contact/>}></Route>
       <Route path="/service/softwaredevelopment/customsoftwaredevelopment/help" element={<Contact/>}></Route>
       <Route path="/service/webapp/ecommercedevelopment/help" element={<Contact/>}></Route>
+<<<<<<< HEAD
 
      <Route path="/comingsoon" element={<Coming_soon/>}></Route>
+=======
+     
+>>>>>>> 758f2be69888acb3bb3391ed70608c45ba2a26c2
       <Route path="/Join" element={<Joinus/>}></Route>
       <Route path="/Contact" element={<Contact/>}></Route>
       <Route path="/button" element={<Contact/>}></Route>
@@ -117,7 +149,11 @@ function App() {
       
     </Routes>
     
+<<<<<<< HEAD
     
+=======
+    </BrowserRouter>
+>>>>>>> 758f2be69888acb3bb3391ed70608c45ba2a26c2
     <Finalfooter/>
 
     

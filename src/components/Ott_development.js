@@ -6,8 +6,12 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
+<<<<<<< HEAD
 
 
+=======
+import { colors } from "@mui/material";
+>>>>>>> 758f2be69888acb3bb3391ed70608c45ba2a26c2
 import {
     Accordion,
     AccordionHeader,
@@ -124,7 +128,11 @@ function Ott_development() {
             OTT App Development Services We Offer
           </h1>
 
+<<<<<<< HEAD
           <div className="hidden lg:block sm:h-[500px] md:h-[400px] xl:h-[433px] py-[35px] xl:py-[50px]  lg:px-[10px] 2xl:px-[30px] mt-[30px] lg:mt-[50px] xl:mt-[60px] bg-[#0904F2] rounded-[14px] ">
+=======
+          <div className="hidden lg:block sm:h-[500px] md:h-[400px] xl:h-[433px] py-[35px] xl:py-[45px]  lg:px-[10px] 2xl:px-[30px] mt-[30px] lg:mt-[50px] xl:mt-[60px] bg-[#0904F2] rounded-[14px] ">
+>>>>>>> 758f2be69888acb3bb3391ed70608c45ba2a26c2
             <Box sx={{ flexGrow: 1, display: "flex", height: 340 }}>
               <Tabs
               
@@ -137,29 +145,46 @@ function Ott_development() {
               >
                 
                 <Tab
+<<<<<<< HEAD
                   className="text-white w-[300px] "
+=======
+                  className="text-white w-[400px] "
+>>>>>>> 758f2be69888acb3bb3391ed70608c45ba2a26c2
                   label="Custom OTT App Development"
                   {...a11yProps(0)}
                 />
                 
 
                 <Tab
+<<<<<<< HEAD
                   className="text-white w-[224px]  "
+=======
+                  className="text-white w-[400px]  grid place-items-start"
+>>>>>>> 758f2be69888acb3bb3391ed70608c45ba2a26c2
                   label="Platform Selection"
                   {...a11yProps(1)}
                 />
 
                 <Tab
+<<<<<<< HEAD
                   className="text-white w-[198px] "
+=======
+                  className="text-white w-[400px] "
+>>>>>>> 758f2be69888acb3bb3391ed70608c45ba2a26c2
                   label=" API Enhancement"
                   {...a11yProps(2)}
                 />
                 <Tab
+<<<<<<< HEAD
                   className="text-white w-[343px]"
+=======
+                  className="text-white w-[400px]"
+>>>>>>> 758f2be69888acb3bb3391ed70608c45ba2a26c2
                   label=" User Authentication and Security"
                   {...a11yProps(3)}
                 />
                 <Tab
+<<<<<<< HEAD
                   className="text-white w-[230px]"
                   label="Feature Integration"
                   {...a11yProps(4)}
@@ -173,6 +198,19 @@ function Ott_development() {
                
                 <Tab
                   className="text-white w-[266px]"
+=======
+                  className="text-white w-[400px]"
+                  label="Feature Integration"
+                  {...a11yProps(4)}
+                />
+                <Tab
+                  className="text-white w-[400px]"
+                  label="Real-time Chat and Messaging"
+                  {...a11yProps(5)}
+                />
+                <Tab
+                  className="text-white w-[400px]"
+>>>>>>> 758f2be69888acb3bb3391ed70608c45ba2a26c2
                   label="Analytics and Reporting"
                   {...a11yProps(6)}
                 />
@@ -348,7 +386,10 @@ function Ott_development() {
                 </div>
               </TabPanel>
             </Box>
+<<<<<<< HEAD
             
+=======
+>>>>>>> 758f2be69888acb3bb3391ed70608c45ba2a26c2
           </div>
           <div className=" lg:hidden  lg:h-[400px] xl:h-[433px] xl:py-[45px]  lg:px-[10px] 2xl:px-[30px] mt-[30px] lg:mt-[50px] xl:mt-[60px] ">
             <Accordion open={open === 1} style={{borderBottom:"1px solid  #E0E0E0"}} icon={<Icon id={1} open={open} />}>
@@ -549,7 +590,11 @@ function Ott_development() {
                 <img src="/images/pythone.svg"></img>
               </div>
               <div className="hidden sm:block w-[103px] h-[30px]">
+<<<<<<< HEAD
                 <img src="/images//ruby.svg"></img>
+=======
+                <img src="/images/social media platform/ruby&angular.svg"></img>
+>>>>>>> 758f2be69888acb3bb3391ed70608c45ba2a26c2
               </div>
               <div className="w-[103px] h-[30px]">
                 <img src="/images/vuejs.svg"></img>
@@ -560,12 +605,18 @@ function Ott_development() {
               <div className="w-[103px] h-[30px]">
                 <img src="/images/javascript.svg"></img>
               </div>
+<<<<<<< HEAD
               <div className="w-[103px] h-[30px] mt-[-5px]">
                 <img src="/images/social media platform/mysql.svg"></img>
               </div>
               <div className=" hidden sm:block w-[103px] h-[30px] mt-[6px]">
                 <img src="/images/social media platform/angular.svg"></img>
               </div>
+=======
+              <div className="w-[103px] h-[30px]">
+                <img src="/images/social media platform/mysql.svg"></img>
+              </div>
+>>>>>>> 758f2be69888acb3bb3391ed70608c45ba2a26c2
               <div className=" sm:hidden w-[103px] h-[30px]">
                 <img src="/images/social media platform/angular.svg"></img>
               </div>
