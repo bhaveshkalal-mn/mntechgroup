@@ -1,66 +1,10 @@
 import React, { useState } from "react";
-import emailjs from "emailjs-com";
 import { Input } from "@material-tailwind/react";
 import { Form } from "react-router-dom";
 import axios from "axios";
 
 
 function Contact() {
-
-
-  //Data
-
-  // const [FormData,SetFormData] = useState({
-  //   name : "",
-  //   email : "",
-  //   contactNo : "",
-  //   budget : "",
-  //   description : ""
-  // })
-
-  // const HandleChange = (e) =>{
-
-  //   const value = e.target.value;
-  //   const name = e.target.name;
-
-  //   SetFormData(()=>{
-  //     return {...FormData ,[name]: value}
-  //   })
-
-  // }
-
-  // // Validation 
-  // const [file, setFile] = useState(null);
-  // const [error, setError] = useState('');
-
-  // const handleFileChange = (event) => {
-  //   const selectedFile = event.target.files[0];
-
-  //   if (selectedFile) {
-  //     // Check if the file size is within the allowed limit (5 MB)
-  //     if (selectedFile.size <= 5 * 1024 * 1024) {
-  //       setFile(selectedFile);
-  //       setError('');
-  //     } else {
-  //       setFile(null);
-  //       setError('File size exceeds the maximum limit (5 MB).');
-  //     }
-  //   }
-  // };
-
-  // const handleUpload = (e) => {
-  //   e.preventDefault();
-  //   // Handle file upload logic here
-  //   if (file) {
-  //     // Perform the upload operation
-  //     console.log('Uploading file:', file);
-  //   } else {
-  //     setError('Please select a valid file.');
-  //   }
-
-  //   console.log(FormData)
-  // };
-
 
   const [formData, setFormData] = useState({
     name: '',
