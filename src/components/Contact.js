@@ -318,32 +318,28 @@ function Contact() {
             >
               MN Techgroup around the Globe
             </div>
-            <div className="mt-[20px] sm:mt-[0px] w-[333px] h-[1.5px] sm:w-[1px] xl:w-[1.5px] sm:h-[151px] xl:h-[157px] bg-[#0904F2]"></div>
+            <div className="mt-[20px] sm:mt-[0px] w-[333px] h-[1.5px] sm:w-[1px] xl:w-[1.5px] sm:h-[137px] xl:h-[140px] bg-[#0904F2]"></div>
             <div className="grid place-items-center sm:place-items-start">
-              <div className=" py-[10px] mt-[10px] sm:mt-[0px] sm:ml-[5px] sm:mr-[5px] md:ml-[30px] md:mr-[30px]  lg:ml-[60px] lg:mr-[50px] xl:ml-[70px] xl:mr-[60px] 2xl:ml-[90px] 2xl:mr-[94px]">
+              <div className=" py-[30px] xl:py-[25px] mt-[10px] sm:mt-[0px] sm:ml-[5px] sm:mr-[5px] md:ml-[30px] md:mr-[30px]  lg:ml-[60px] lg:mr-[50px] xl:ml-[70px] xl:mr-[60px] 2xl:ml-[90px] 2xl:mr-[94px]">
                 <h1 className="text-[28px] sm:text-[18px] xl:text-[28px] font-semibold">India</h1>
                 <p className=" xl:text-[16px] font-sans lg:font-medium">
                   Gandhinagar, Gujarat
                 </p>
-                <p className="xl:text-[16px] font-sans lg:font-medium mt-[39px]">
-                  +91 90000 10000
-                </p>
-                <p className="xl:text-[16px] font-sans lg:font-medium mt-[7px]">
+               
+                <p className="xl:text-[16px] font-sans lg:font-medium sm:mt-[5px] xl:mt-[7px]">
                   contact@mntecgroup.com
                 </p>
               </div>
             </div>
-            <div className="mt-[20px] sm:mt-[0px] w-[333px] h-[1.5px] sm:w-[1px] lg:w-[1.1px] xl:w-[1.5px] sm:h-[151px] xl:h-[157px] bg-[#0904F2]"></div>
+            <div className="mt-[20px] sm:mt-[0px] w-[333px] h-[1.5px] sm:w-[1px] lg:w-[1.1px] xl:w-[1.5px] sm:h-[137px] xl:h-[140px] bg-[#0904F2]"></div>
             <div className="grid place-items-center sm:place-items-start">
-              <div className="py-[10px] mt-[10px] sm:mt-[0px] sm:ml-[5px] md:ml-[40px] lg:ml-[66px] xl:ml-[80px] 2xl:ml-[90px]">
+              <div className="py-[30px] xl:py-[25px] mt-[10px] sm:mt-[0px] sm:ml-[5px] md:ml-[40px] lg:ml-[66px] xl:ml-[80px] 2xl:ml-[90px]">
                 <h1 className="text-[28px] sm:text-[18px] xl:text-[28px] font-semibold">Malaysia</h1>
                 <p className="xl:text-[16px] font-sans lg:font-medium">
                   Selonagor, Kualalumpur
                 </p>
-                <p className="xl:text-[16px] font-sans lg:font-medium mt-[39px]">
-                  +60 100002321
-                </p>
-                <p className="xl:text-[16px] font-sans lg:font-medium mt-[7px] ">
+                
+                <p className="xl:text-[16px] font-sans lg:font-medium sm:mt-[5px] xl:mt-[7px] ">
                   contact@mntecgroup.com
                 </p>
               </div>
